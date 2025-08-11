@@ -1,12 +1,12 @@
-import React, { useState, useMemo } from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import ReactPlayer from "react-player/lazy";
+import ReactPlayer from "react-player"; // ✅ normaler Import, kein /lazy
 
 function ProjectCards({
-  imgPath,        // Bild ODER lokale MP4 (bestehend)
-  videoUrl,       // NEU: YouTube/Vimeo/Remote-MP4
+  imgPath,        // Bild oder lokale MP4
+  videoUrl,       // NEU: YouTube / Vimeo / Remote-MP4
   title,
   description,
   buttons = []
@@ -17,19 +17,7 @@ function ProjectCards({
     typeof imgPath === "string" && imgPath.toLowerCase().endsWith(".mp4");
 
   const hasVideo = !!videoUrl || isLocalMp4;
-  const smallPlayerUrl = videoUrl || imgPath;
-
-  // Für YouTube: hübschere Defaults
-  const ytVars = useMemo(
-    () => ({
-      modestbranding: 1,
-      rel: 0,
-      controls: 0,
-      // autoplay/mute/playsinline werden durch Props unten erzwungen
-      playsinline: 1
-    }),
-    []
-  );
+  const playerUrl = videoUrl || imgPath;
 
   function VideoModal({ show, onHide }) {
     return (
@@ -37,14 +25,13 @@ function ProjectCards({
         <Modal.Body style={{ position: "relative", paddingTop: "56.25%" }}>
           <div style={{ position: "absolute", inset: 0 }}>
             <ReactPlayer
-              url={smallPlayerUrl}
+              url={playerUrl}
               width="100%"
               height="100%"
-              controls          // im Modal: mit Controls
-              playing           // spielt direkt los
-              muted={false}     // mit Ton (User-Interaktion -> OK)
+              controls     // im Modal mit Controls
+              playing
+              muted={false}
               loop
-              config={{ youtube: { playerVars: ytVars } }}
             />
           </div>
         </Modal.Body>
@@ -56,25 +43,21 @@ function ProjectCards({
 
   return (
     <Card className="project-card-view">
-      {/* Media: immer Video, wenn vorhanden – autoplay, muted, loop, ohne Poster */}
       {hasVideo ? (
         <div
           style={{ position: "relative", paddingTop: "56.25%", cursor: "pointer" }}
           onClick={() => setModalShow(true)}
-          aria-label="Open video"
         >
           <div style={{ position: "absolute", inset: 0 }}>
             <ReactPlayer
-              url={smallPlayerUrl}
+              url={playerUrl}
               width="100%"
               height="100%"
-              playing        // Autoplay
-              muted          // nötig für Autoplay in Browsern
+              playing      // Autoplay
+              muted        // nötig für Autoplay
               loop
               controls={false}
               playsinline
-              // KEIN "light": dadurch kein Poster/Thumbnail, direkt Video
-              config={{ youtube: { playerVars: ytVars } }}
             />
           </div>
         </div>
@@ -84,7 +67,10 @@ function ProjectCards({
 
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }} dangerouslySetInnerHTML={createMarkup(description)} />
+        <Card.Text
+          style={{ textAlign: "justify" }}
+          dangerouslySetInnerHTML={createMarkup(description)}
+        />
         {buttons.map((b, i) => (
           <Button
             key={i}

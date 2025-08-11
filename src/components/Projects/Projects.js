@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import suicide from "../../Assets/Projects/cluster.png";
 import mihubx from "../../Assets/Projects/Mihubx.jpg";
 import epochen from "../../Assets/Projects/epochen.gif";
+import editor from "../../Assets/Projects/CSMRT.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
