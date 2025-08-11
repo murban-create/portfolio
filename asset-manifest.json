@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d5ec13ea.css",
-    "main.js": "/portfolio/static/js/main.4348defe.js",
+    "main.js": "/portfolio/static/js/main.548e0bc8.js",
     "static/js/523.d2169cf9.chunk.js": "/portfolio/static/js/523.d2169cf9.chunk.js",
     "reactPlayerHls.js": "/portfolio/static/js/reactPlayerHls.9e4c2a19.chunk.js",
     "reactPlayerDash.js": "/portfolio/static/js/reactPlayerDash.1432d901.chunk.js",
@@ -30,6 +30,6 @@
   },
   "entrypoints": [
     "static/css/main.d5ec13ea.css",
-    "static/js/main.4348defe.js"
+    "static/js/main.548e0bc8.js"
   ]
 }
