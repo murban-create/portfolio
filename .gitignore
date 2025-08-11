@@ -1,0 +1,17 @@
+# Node modules (niemals committen)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+build/
+dist/
+
+# gh-pages Cache
+node_modules/.cache/gh-pages/
+
+# Mac-OS Metadaten
+.DS_Store
