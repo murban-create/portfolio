@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.d5ec13ea.css",
+    "main.js": "/portfolio/static/js/main.4348defe.js",
+    "static/js/523.d2169cf9.chunk.js": "/portfolio/static/js/523.d2169cf9.chunk.js",
+    "reactPlayerHls.js": "/portfolio/static/js/reactPlayerHls.9e4c2a19.chunk.js",
+    "reactPlayerDash.js": "/portfolio/static/js/reactPlayerDash.1432d901.chunk.js",
+    "reactPlayerMux.js": "/portfolio/static/js/reactPlayerMux.7556b90c.chunk.js",
+    "reactPlayerYouTube.js": "/portfolio/static/js/reactPlayerYouTube.eb119106.chunk.js",
+    "reactPlayerVimeo.js": "/portfolio/static/js/reactPlayerVimeo.0cf23cf3.chunk.js",
+    "reactPlayerWistia.js": "/portfolio/static/js/reactPlayerWistia.7014f901.chunk.js",
+    "reactPlayerSpotify.js": "/portfolio/static/js/reactPlayerSpotify.d0c64288.chunk.js",
+    "reactPlayerTwitch.js": "/portfolio/static/js/reactPlayerTwitch.14d05f31.chunk.js",
+    "reactPlayerTiktok.js": "/portfolio/static/js/reactPlayerTiktok.053c710e.chunk.js",
+    "reactPlayerPreview.js": "/portfolio/static/js/reactPlayerPreview.cac7bdd6.chunk.js",
+    "static/js/206.020cae30.chunk.js": "/portfolio/static/js/206.020cae30.chunk.js",
+    "static/js/655.fdb6ac7f.chunk.js": "/portfolio/static/js/655.fdb6ac7f.chunk.js",
+    "static/js/313.c1cf8915.chunk.js": "/portfolio/static/js/313.c1cf8915.chunk.js",
+    "static/media/27-03.png": "/portfolio/static/media/27-03.9ad85bf003d832eb1b83.png",
+    "static/media/cluster.png": "/portfolio/static/media/cluster.eda834b9ef80b98c2ff8.png",
+    "static/media/Mihubx.jpg": "/portfolio/static/media/Mihubx.0dd3b2ab38c3491a9e24.jpg",
+    "static/media/CSMRT.png": "/portfolio/static/media/CSMRT.8e97ecc33d304081facc.png",
+    "static/media/Lebenslauf_Mona_Urban.pdf": "/portfolio/static/media/Lebenslauf_Mona_Urban.639167f02317f4c8772c.pdf",
+    "static/media/working_cat.png": "/portfolio/static/media/working_cat.b579467d3fab97a6eeed.png",
+    "static/media/about.png": "/portfolio/static/media/about.aee0f771fbfc1e7b8fa8.png",
+    "static/media/home-bg.jpg": "/portfolio/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
+    "static/media/epochen.gif": "/portfolio/static/media/epochen.2033657c36dbbc6dc574.gif",
+    "static/media/pre.svg": "/portfolio/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/portfolio/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.d5ec13ea.css",
+    "static/js/main.4348defe.js"
+  ]
+}
