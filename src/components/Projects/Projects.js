@@ -2,14 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/Ampguard.mp4";
 import suicide from "../../Assets/Projects/cluster.png";
-import csmrt from "../../Assets/Projects/CSMRT.mp4";
-import birdnet from "../../Assets/Projects/BirdNET.mp4";
-import ampguard from "../../Assets/Projects/Ampguard.mp4";
-import history from "../../Assets/Projects/History.mp4";
 import mihubx from "../../Assets/Projects/Mihubx.jpg";
-import studisq from "../../Assets/Projects/StudiSQ.mp4";
 import epochen from "../../Assets/Projects/epochen.gif";
 function Projects() {
   return (
@@ -59,7 +53,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={history}
+              videoUrl="https://youtu.be/x7RQFetVSw8"
               isBlog={false}
               title="Master Thesis"
               description="<p>This project aimed to semi-automatically create and validate historical event databases using prompt engineering techniques and interactive cartographic information displays, focusing on the conquest of Mexico by Hernan Cortes. The objective was to extract data about 100 significant events related to this historical period using chatbots and compare the outputs from different AI models.</p>
@@ -120,7 +114,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={csmrt}
+              videoUrl="https://youtu.be/bT1n7QWPJBk"
               isBlog={false}
               title="Website CSMRT HSMW"
               description="
@@ -152,7 +146,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={studisq}
+              videoUrl="https://youtu.be/Djs9J_0DbuI"
               isBlog={false}
               title="StudiSQ App"
               description="<p>The universities in Saxony have joined forces to provide the ultimate learning experience. Here, you can find quizzes that have been created by your professors, lecturers, etc., which you can play alone or against your fellow students. The app offers various features to support your learning in a playful manner. These include:</p>
@@ -193,7 +187,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={birdnet}
+              videoUrl="https://youtu.be/D2JnMDm2zcI"
               isBlog={false}
               title="Bachelor Thesis"
               description="<p>This project focuses on the semi-automated creation and validation of a real-time cluster visualization system for BirdNET embedding vectors. BirdNET is a research platform used to predict bird species from audio recordings through vocalizations. The aim was to enhance the interpretability of these complex data sets through innovative visualization techniques.</p>
@@ -264,7 +258,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={ampguard}
+              videoUrl="https://www.youtube.com/watch?v=dXGORsLqPp4"
               isBlog={false}
               title="Ampguard"
               description="<p>Fifty students from the Media Informatics and Interactive Entertainment program at the University of Applied Sciences Mittweida developed their own game over the course of 11 months. The game, named Ampguard, is an action-packed rogue-like single player experience with an adaptable combat system and strategic gameplay elements.</p>
